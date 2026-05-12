@@ -30,6 +30,11 @@ nav button:hover {
   color: white;
 }
 
+nav button.active-btn {
+  background: #1e293b;
+  color: white;
+}
+
 main {
   max-width: 900px;
   margin: auto;
