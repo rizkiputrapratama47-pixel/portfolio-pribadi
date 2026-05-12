@@ -1,0 +1,13 @@
+name: HTML Check
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  check-files:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check HTML exists
+        run: ls
