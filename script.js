@@ -1,4 +1,9 @@
-function showMessage() {
-  document.getElementById("message").innerText =
-    "Thank you for visiting my portfolio!";
+function showPage(pageId) {
+  const pages = document.querySelectorAll('.page');
+
+  pages.forEach(page => {
+    page.classList.remove('active');
+  });
+
+  document.getElementById(pageId).classList.add('active');
 }

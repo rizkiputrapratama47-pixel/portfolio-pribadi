@@ -7,44 +7,40 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Rizki Putra Pratama</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('about')">About</button>
+    <button onclick="showPage('projects')">Projects</button>
+    <button onclick="showPage('contact')">Contact</button>
+  </nav>
 
-  <section id="home">
-    <h2>Welcome</h2>
-    <p>Hello! Welcome to my personal portfolio website.</p>
-  </section>
+  <main>
+    <section id="home" class="page active">
+      <h1>Hi, I'm Rizki Putra Pratama 👋</h1>
+      <p>Welcome to my personal portfolio website.</p>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I am an Information Systems student interested in web development, Laravel, and IoT.</p>
-  </section>
+    <section id="about" class="page">
+      <h1>About Me</h1>
+      <p>I am a web developer passionate about Laravel, IoT, and UI design.</p>
+    </section>
 
-  <section id="projects">
-    <h2>My Projects</h2>
-    <ul>
-      <li>Hospital Queue System</li>
-      <li>Smart Door Lock IoT</li>
-      <li>Car Sales Desktop App</li>
-    </ul>
-  </section>
+    <section id="projects" class="page">
+      <h1>Projects</h1>
+      <div class="project-grid">
+        <div class="card">Hospital Queue System</div>
+        <div class="card">Arduino Door Lock</div>
+        <div class="card">Car Sales Desktop App</div>
+      </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: rizki@example.com</p>
-    <button onclick="showMessage()">Say Hello</button>
-    <p id="message"></p>
-  </section>
+    <section id="contact" class="page">
+      <h1>Contact</h1>
+      <p>Email: rizki@example.com</p>
+      <p>GitHub: github.com/username</p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-<!-- Buat file style.css dan script.js terpisah -->
