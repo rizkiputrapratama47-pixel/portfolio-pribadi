@@ -1,13 +1,20 @@
-name: HTML Check
+name: Portfolio Workflow
 
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
-  check-files:
+  check-project:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - name: Check HTML exists
-        run: ls
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List project files
+        run: ls -la
+
+      - name: Success message
+        run: echo "Portfolio workflow success!"
